@@ -1,6 +1,6 @@
 # Better Player for Twitch
 
-Better Player for Twitch enhances Twitch's native player in Firefox with additional playback, audio, and quality-of-life controls.
+Better Player for Twitch enhances Twitch's native player with additional playback, audio, quality, and quality-of-life controls.
 
 This repository is the public home for **documentation, support, bug reports, and feature requests** for Better Player for Twitch.
 
@@ -20,11 +20,13 @@ This repository is the public home for **documentation, support, bug reports, an
 - Interactive overlay visibility controls
 - Customizable player-control accent color
 - Optional ad-block status indicator
-- Recovery for selected Twitch/Firefox playback failures
+- Recovery for selected Twitch playback failures
 
-## Firefox support
+## Browser support
 
-The initial public release targets **Firefox desktop**.
+### Firefox
+
+The Firefox desktop build is the initial public release.
 
 - Minimum Firefox version: **142**
 - Firefox for Android is not currently supported
@@ -32,11 +34,22 @@ The initial public release targets **Firefox desktop**.
 
 The Firefox Add-ons listing has been submitted for review. A direct store link will be added here when the listing is public.
 
+### Chromium
+
+A Manifest V3 build is being prepared for Chromium-based desktop browsers.
+
+- Minimum Chromium version: **102**
+- Microsoft Edge on Windows 11 has passed real-world validation with build **2026.9.26.45**
+- Google Chrome and Brave still need final browser-specific sanity checks before store submission
+- The Chromium build does not run in Incognito mode
+
+The same Chromium MV3 package is intended for Chrome, Edge, and Brave-compatible distribution.
+
 ## Privacy
 
 Better Player has no developer-operated analytics, advertising, tracking, or telemetry service.
 
-Playback-related requests are sent only to Twitch-operated services as required for Twitch playback functionality. Settings and per-channel audio profiles are stored locally in Firefox.
+Playback-related requests are sent only to Twitch-operated services as required for Twitch playback functionality. Settings and per-channel audio profiles are stored in the browser's extension storage.
 
 See the [Privacy Policy](PRIVACY_POLICY.md) for details.
 
@@ -50,9 +63,9 @@ You can also:
 - [Request a feature](../../issues/new?template=feature_request.yml)
 - [View existing issues](../../issues)
 
-When reporting playback problems, please include your Firefox version, Better Player version, steps to reproduce the problem, and whether another Twitch/ad-blocking extension is enabled.
+When reporting playback problems, please include your browser and version, Better Player version, operating system, steps to reproduce the problem, and whether another Twitch/ad-blocking extension is enabled.
 
-**Do not post Twitch cookies, authorization headers, session tokens, or other account credentials in an issue.**
+**Do not post Twitch cookies, authorization headers, session tokens, integrity values, or other account credentials in an issue.**
 
 ## Known limitations
 
