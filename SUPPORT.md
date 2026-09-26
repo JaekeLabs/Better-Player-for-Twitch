@@ -6,8 +6,10 @@ This repository is the public support and issue tracker for Better Player for Tw
 
 Please make sure:
 
-1. You are using **Firefox desktop 142 or newer**.
-2. Better Player is enabled in Firefox Add-ons Manager.
+1. You are using a supported desktop browser version:
+   - Firefox **142 or newer**, or
+   - Chromium **102 or newer** for the Chromium MV3 build.
+2. Better Player is enabled in your browser's extension manager.
 3. You have refreshed the Twitch tab after installing or updating the extension.
 4. You are not running another extension that modifies Twitch's stream-level video-ad playback.
 5. The problem still occurs after a normal page reload.
@@ -19,7 +21,7 @@ If the issue only occurs on one Twitch channel, mention that in the report.
 Please include:
 
 - Better Player version
-- Firefox version
+- Browser and browser version
 - Operating system
 - Twitch page/channel where the issue occurred, when relevant
 - Clear steps to reproduce the issue
