@@ -16,10 +16,10 @@ body:
       required: true
 
   - type: input
-    id: firefox
+    id: browser
     attributes:
-      label: Firefox version
-      placeholder: "Example: 142.0"
+      label: Browser and version
+      placeholder: "Example: Microsoft Edge 140.0 or Firefox 142.0"
     validations:
       required: true
 
