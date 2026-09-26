@@ -1,0 +1,89 @@
+name: Bug report
+description: Report a reproducible problem with Better Player for Twitch
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please do not include Twitch cookies, tokens, authorization headers, or other account credentials.
+
+  - type: input
+    id: version
+    attributes:
+      label: Better Player version
+      placeholder: "Example: 2026.9.25.44"
+    validations:
+      required: true
+
+  - type: input
+    id: firefox
+    attributes:
+      label: Firefox version
+      placeholder: "Example: 142.0"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Example: Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: channel
+    attributes:
+      label: Twitch channel or page
+      description: Optional. Include this if the problem is specific to a channel or page.
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Often
+        - Sometimes
+        - Once so far
+    validations:
+      required: true
+
+  - type: textarea
+    id: extensions
+    attributes:
+      label: Other relevant extensions
+      description: List any Twitch, ad-blocking, audio, or player-modifying extensions that are enabled.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Screenshots or other non-sensitive details are welcome.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included Twitch cookies, tokens, authorization headers, passwords, or other account credentials.
+          required: true
