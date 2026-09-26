@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest an improvement or new feature for Better Player for Twitch
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the workflow, limitation, or frustration you want improved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Better Player to do?
+      description: Describe the behavior you would find useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or alternatives
+      description: Optional. Tell us how you handle this today.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, examples, or related links are welcome.
