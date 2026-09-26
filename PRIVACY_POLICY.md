@@ -1,14 +1,14 @@
 # Privacy Policy for Better Player for Twitch
 
-**Effective date: 2026-09-25**
+**Effective date: 2026-09-26**
 
-Better Player for Twitch is an independent Firefox extension maintained by JaekeLabs. It is not affiliated with or endorsed by Twitch Interactive, Inc.
+Better Player for Twitch is an independent browser extension maintained by JaekeLabs. It is not affiliated with or endorsed by Twitch Interactive, Inc.
 
-The extension enhances Twitch's native web player with ad replacement, audio controls, brightness controls, quality preferences, overlay controls, and related playback features.
+The extension enhances Twitch's native web player with ad replacement, audio controls, brightness controls, quality preferences, overlay controls, and related playback features. Builds are provided for Firefox and Chromium-based browsers such as Microsoft Edge, Google Chrome, and Brave.
 
 ## Data used for core functionality
 
-Better Player operates only on Twitch pages covered by its Firefox manifest.
+Better Player operates only on Twitch pages covered by the installed extension manifest.
 
 To provide its playback and ad-replacement features, the extension may process and transmit the following data to Twitch-operated services:
 
@@ -27,7 +27,7 @@ The extension does not send user data to a JaekeLabs server and does not use ind
 
 ## Local storage
 
-Better Player stores extension preferences locally in Firefox, including settings such as:
+Better Player stores extension preferences in the browser's extension storage, including settings such as:
 
 - whether the extension is enabled;
 - player-control appearance;
@@ -37,15 +37,19 @@ Better Player stores extension preferences locally in Firefox, including setting
 - per-channel equalizer state and band values;
 - quality and overlay preferences.
 
-Per-channel audio profiles are stored in Firefox extension storage so they can be restored when the user returns to that Twitch channel.
+Per-channel audio profiles are stored in extension storage so they can be restored when the user returns to that Twitch channel.
 
 The ad-replacement engine may also use Twitch page storage for playback-related state, such as the maximum-quality preference, and session storage for a short-lived cache of protected/encrypted Twitch channels.
 
 Authentication/session values captured from Twitch requests are not intentionally persisted in Better Player's extension settings.
 
-## Private browsing
+## Private browsing and Incognito
 
-The initial public release does not run in Firefox Private Windows. This prevents persistent per-channel settings from recording Twitch browsing activity from a private-browsing session.
+The Firefox release does not run in Firefox Private Windows.
+
+The Chromium Manifest V3 build declares Incognito mode as not allowed.
+
+These restrictions prevent Better Player's persistent per-channel settings from recording Twitch browsing activity from private-browsing or Incognito sessions.
 
 ## Data sharing and sale
 
@@ -55,7 +59,7 @@ Better Player does not transmit collected data to independent third parties. Dat
 
 ## Data retention and deletion
 
-Extension settings and per-channel audio profiles remain on the user's device until they are changed, cleared, or the extension's stored data is removed.
+Extension settings and per-channel audio profiles remain in the user's browser profile until they are changed, cleared, or the extension's stored data is removed.
 
 Session-only playback state expires with the applicable browser/tab session.
 
@@ -63,7 +67,7 @@ Uninstalling the extension or clearing its extension storage removes Better Play
 
 ## User control
 
-Users can disable or uninstall Better Player at any time from Firefox Add-ons Manager.
+Users can disable or uninstall Better Player at any time from their browser's extension manager.
 
 The extension also provides an in-page enable/disable control for its Twitch enhancements.
 
